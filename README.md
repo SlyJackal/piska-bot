@@ -1,1 +1,4 @@
-# piska-bot
+# TgBot
+
+Getting started:
+https://github.com/aiogram/aiogram
