@@ -17,7 +17,7 @@ async def word_in_text(message: types.Message):
     text = message.text.split()
     if {'Вера', 'вера', 'Писька', 'писька', 'Писька!', 'писька!', 'Веры', 'веры'} & set(text):
         await message.answer('Писька!')
-    elif {'Вова', 'Никита', 'Игорь', 'Наташа', 'Алексей'} & set(text):
+    if {'Вова', 'Никита', 'Игорь', 'Наташа', 'Алексей'} & set(text):
         await message.answer('Я не буду писать это слово!')
 
 
