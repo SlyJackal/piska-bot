@@ -22,5 +22,3 @@ async def word_in_text(message: types.Message):
 if __name__ == '__main__':
     load_dotenv()
     executor.start_polling(dp)
-    
-    await bot.send_message(84381379, 'text')
