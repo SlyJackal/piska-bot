@@ -18,6 +18,11 @@ async def word_in_text(message: types.Message):
     if {'Вера', 'вера', 'Писька', 'писька', 'Писька!', 'писька!', 'Веры', 'веры'} & set(text):
         await message.answer('Писька!')
 
+@dp.message_handler()
+async def word_in_text(message: types.Message):
+    text = message.text.split()
+    if {'Вова', 'Никита', 'Игорь', 'Наташа', 'Алексей'} & set(text):
+        await message.answer('Писька!')
 
 if __name__ == '__main__':
     load_dotenv()
