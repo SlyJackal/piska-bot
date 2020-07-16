@@ -15,7 +15,7 @@ async def start(message: types.Message):
 @dp.message_handler()
 async def word_in_text(message: types.Message):
     text = message.text.split()
-    if {'Вера', 'вера', 'Писька', 'писька'} & set(text):
+    if {'Вера', 'вера', 'Писька', 'писька', 'Писька!', 'писька!'} & set(text):
         await message.answer('Писька!')
 
 
