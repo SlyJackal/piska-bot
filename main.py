@@ -22,7 +22,7 @@ async def word_in_text(message: types.Message):
 async def word_in_text(message: types.Message):
     text = message.text.split()
     if {'Вова', 'Никита', 'Игорь', 'Наташа', 'Алексей'} & set(text):
-        await message.answer('Писька!')
+        await message.answer('Я не буду писать это слово!')
 
 if __name__ == '__main__':
     load_dotenv()
