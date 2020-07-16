@@ -19,7 +19,7 @@ async def word_in_text(message: types.Message):
         await message.answer('Писька!')
     if {'Вова', 'Никита', 'Игорь', 'Алексей'} & set(text):
         await message.answer('Я не буду писать это слово!')
-    if {'Игорь'} & set(text):
+    if {'Игорь', 'Иииииигооорь Котов'} & set(text):
         await message.answer('Жрать')
     if {'Наташа'} & set(text):
         await message.answer('Бежать')
