@@ -20,9 +20,11 @@ async def word_in_text(message: types.Message):
     if {'Вова', 'Никита', 'Игорь', 'Алексей'} & set(text):
         await message.answer('Я не буду писать это слово!')
     if {'Игорь', 'Иииииигооорь Котов'} & set(text):
-        await message.answer('Жрать')
+        await message.answer('Жрать!')
     if {'Наташа'} & set(text):
-        await message.answer('Бежать')
+        await message.answer('Бежать!')
+    if {'Алексей'} & set(text):
+        await message.answer('Папка!')
 
 
 if __name__ == '__main__':
