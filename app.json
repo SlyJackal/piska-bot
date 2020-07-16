@@ -1,6 +1,6 @@
 {
-  "name": "МЕГА МАГИЧЕСКИЕ МАГИ МАГИИ",
-  "description": "КАСТУЙ, УБИВАЙ, СЖИГАЙ, РАСЧЛЕНЯЙ",
+  "name": "Писька! Бот",
+  "description": "пишет только слово "Писька!"",
   "image": "heroku/python",
   "repository": "https://github.com/Hellsingoff/TgBot",
   "keywords": ["python"]
