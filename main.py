@@ -35,6 +35,28 @@ async def start(message: types.Message):
 async def word_in_text(message: types.Message):
     if re.search(r'\b(?:вера|писька)\b', message.text.lower()) is not None:
         await message.answer('Писька!')
+    if re.search(r'\b(?:Вова|Владимир)\b', message.text.lower()) is not None:
+        await message.answer('Он молодец :P')
+    if re.search(r'\b(?:Никита|Никитка|Ник)\b', message.text.lower()) is not None:
+        await message.answer('Котлетка!')
+    if re.search(r'\b(?:Игорь|Котов|Иииииигооорь)\b', message.text.lower()) is not None:
+        await message.answer('Жрать!')
+    if re.search(r'\b(?:Наташа|Нат|Наташка)\b', message.text.lower()) is not None:
+        await message.answer('Бежать!')
+    if re.search(r'\b(?:Алексей|Леша|Лёха|Лёша|Леха)\b', message.text.lower()) is not None:
+        await message.answer('Папка!')
+    if re.search(r'\b(?:Регресс|Срочно|надо)\b', message.text.lower()) is not None:
+        await message.answer('ПИСЬКА! ПИСЬКА! ПИСЬКА!')
+    if re.search(r'\b(?:Загоруйк|Виталя)\b', message.text.lower()) is not None:
+        await message.answer('Всякий!')
+    if re.search(r'\b(?:Антон|Старовойтов)\b', message.text.lower()) is not None:
+        await message.answer('Сила!')
+    if re.search(r'\b(?:сук|блять|пиздец|хуй|нах)\b', message.text.lower()) is not None:
+        await message.answer('Не матерись!')
+    if re.search(r'\b(?:попа|попка)\b', message.text.lower()) is not None:
+        await message.answer('Я люблю попки жено-ботов!')
+    if re.search(r'\b(?:Спасибо)\b', message.text.lower()) is not None:
+        await message.answer('Рад служить!')
 
 if __name__ == '__main__':
     load_dotenv()
