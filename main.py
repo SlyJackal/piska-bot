@@ -20,7 +20,7 @@ async def start(message: types.Message):
     #if {'Вова', 'Вова?', 'Вова!'} & set(text):
      #   await message.answer('Я не буду писать это слово!')
     #if {'Никита', 'Никита?', 'Никита!'} & set(text):
-        await message.answer('Котлетка!')
+        #await message.answer('Котлетка!')
     #if {'Игорь', 'Игорь?', 'Игорь!'} & set(text):
     #    await message.answer('Жрать!')
     #if {'Наташа', 'Наташа?', 'Наташа!'} & set(text):
