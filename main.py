@@ -33,7 +33,7 @@ async def start(message: types.Message):
 
 @dp.message_handler()
 async def word_in_text(message: types.Message):
-    if re.search(r'\b(?:вера|писька)\b', message.text.lower()) is not None:
+    if re.search(r'\b(?:вера|писька|ошибка|баг|ошибся|ошиблась|bug)\b', message.text.lower()) is not None:
         await message.answer('Писька!')
     if re.search(r'\b(?:вова|владимир)\b', message.text.lower()) is not None:
         await message.answer('Он молодец :P')
