@@ -39,7 +39,7 @@ async def word_in_text(message: types.Message):
         await message.answer('Он молодец :P')
     if re.search(r'\b(?:никита|никитка|Ник)\b', message.text.lower()) is not None:
         await message.answer('Котлетка!')
-    if re.search(r'\b(?:игорь|Котов|иииииигооорь)\b', message.text.lower()) is not None:
+    if re.search(r'\b(?:игорь|котов|иииииигооорь)\b', message.text.lower()) is not None:
         await message.answer('Жрать!')
     if re.search(r'\b(?:наташа|нат|наташка)\b', message.text.lower()) is not None:
         await message.answer('Бежать!')
