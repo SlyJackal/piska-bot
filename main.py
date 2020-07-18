@@ -50,7 +50,7 @@ async def word_in_text(message: types.Message):
     if re.search(r'\b(?:загоруйка|виталя)\b', message.text.lower()) is not None:
         await message.answer('Всякий!')
     if re.search(r'\b(?:антон|старовойтов)\b', message.text.lower()) is not None:
-        await message.answer('Сила!')
+        await message.answer('Я не буду про него писать что-то смешное или плохое!')
     if re.search(r'\b(?:сук|блять|пиздец|хуй|нах)\b', message.text.lower()) is not None:
         await message.answer('Не матерись!')
     if re.search(r'\b(?:попа|попка)\b', message.text.lower()) is not None:
