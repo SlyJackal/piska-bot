@@ -51,12 +51,17 @@ async def word_in_text(message: types.Message):
         await message.answer('Всякий!')
     if re.search(r'\b(?:антон|старовойтов)\b', message.text.lower()) is not None:
         await message.answer('Я не буду про него писать что-то смешное или плохое!')
-    if re.search(r'\b(?:сук|блять|пиздец|хуй|нах)\b', message.text.lower()) is not None:
+    if re.search(r'\b(?:сук|блять|пиздец|хуй|нах|ебана)\b', message.text.lower()) is not None:
         await message.answer('Не матерись!')
     if re.search(r'\b(?:попа|попка)\b', message.text.lower()) is not None:
         await message.answer('Я люблю попки жено-ботов!')
+    if re.search(r'\b(?:удалить|удалите|удали)\b', message.text.lower()) is not None:
+        await message.answer('Не надо меня удалять ;(', img=urllib2.urlopen('https://99px.ru/sstorage/86/2019/04/image_862904190004168639423.gif').read())        
     if re.search(r'\b(?:спасибо)\b', message.text.lower()) is not None:
         await message.answer('Рад служить!')
+    if re.search(r'\b(?:бот)\b', message.text.lower()) is not None:
+        await message.answer('Начнем игру! ')  
+
 
 if __name__ == '__main__':
     load_dotenv()
