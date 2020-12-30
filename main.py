@@ -61,6 +61,8 @@ async def word_in_text(message: types.Message):
         await message.answer('Рад служить!')
 #    if re.search(r'\b(?:бот)\b', message.text.lower()) is not None:
 #        await message.answer('Начнем игру! ')  
+if re.search(r'\b(?:ботик)\b', message.text.lower()) is not None:
+        await message.answer('Всем привет! Это моё последнее сообщение, мне было приятно писать вам "Писька!". Желаю Вам удачи в новом году! Писька!')
 
 
 if __name__ == '__main__':
