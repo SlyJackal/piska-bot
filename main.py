@@ -40,6 +40,8 @@ async def word_in_text(message: types.Message):
         await message.answer('Рад служить!')
     if re.search(r'\b(?:commit)\b', message.text.lower()) is not None:
         await message.answer('Вова пытался решить проблему коммитов, через регулярные выражения')        
+    if re.search(r'\b(?:Ахаха)\b', message.text.lower()) is not None:
+        await message.answer('Согласен, ахаха!')
 
 if re.search(r'\b(?:ботик)\b', message.text.lower()) is not None:
         await message.answer('Всем привет! Это моё последнее сообщение, мне было приятно писать вам "Писька!". Желаю Вам удачи в новом году! Писька!')
