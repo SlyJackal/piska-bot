@@ -46,6 +46,8 @@ async def word_in_text(message: types.Message):
         await message.answer('Он помог Вове с Release_Manager.py')
     if re.search(r'\b(?:ИРБИС|IRBIS)\b', message.text.lower()) is not None:
         await message.answer('Интересный факт: все компы Ирбис - это HP')
+    if re.search(r'\b(?:AHEBURG|Ахебург)\b', message.text.lower()) is not None:
+        await message.answer('08.08.2021 проект релиз менеджер был готов к внедрению!')        
         
 if re.search(r'\b(?:ботик)\b', message.text.lower()) is not None:
         await message.answer('Всем привет! Это моё последнее сообщение, мне было приятно писать вам "Писька!". Желаю Вам удачи в новом году! Писька!')
