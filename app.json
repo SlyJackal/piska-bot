@@ -2,6 +2,6 @@
   "name": "Писька! Бот",
   "description": "пишет только слово "Писька!"",
   "image": "heroku/python",
-  "repository": "https://github.com/Hellsingoff/TgBot",
+  "repository": "https://github.com/SlyJackal/piska-bot/",
   "keywords": ["python"]
 }
